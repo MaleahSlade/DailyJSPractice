@@ -13,8 +13,8 @@ function averageOfTwo(a, b) {
 }
 
 console.log(averageOfTwo(10, 20));
-console.log(averageOfTwo(12642, 12^6));
-console.log(averageOfTwo(2^6, 3.142)); 
+console.log(averageOfTwo(12642, 12**6));
+console.log(averageOfTwo(2**6, 3.142)); 
 
 // Question 2
 // Function name: repeatText
@@ -29,6 +29,17 @@ function repeatText(text, a) {
 console.log(repeatText("Maleah", 8));
 console.log(repeatText("Go Liberty! ", 6));
 console.log(repeatText("Go New York, Go New York, Go! ", 2));
+
+//ALTERNATIVE ANSWER USING LOOP
+function repeatText(text, times) {
+    let result = "";
+    for (let i = 0; i < times; i++) {
+        result += text;
+    }
+    return result;
+}
+console.log(repeatText("ha", 3)); // "hahaha"
+console.log(repeatText("ha", 0));
 
 // Question 3
 // Function name: compareNumbers
@@ -49,6 +60,16 @@ function compareNumbers(a, b) {
     }
 }
 
+//ALTERNATIVE ANSWER
+function compareNumbers(a, b) {
+    if (a > b) {
+        return "greater";
+    } else if (a < b) {
+        return "less";
+    } else {
+        return "equal";
+    }
+}
 
 console.log(compareNumbers(14, 14));
 console.log(compareNumbers(2, 16));
